@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+   <!-- <html lang="pt-br" class="running music-on"></html> -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,24 +15,24 @@
   <body>
 
     <div id="app">
-      <button id="toggle-mode">
+     <!-- <button id="toggle-mode">
         <span>Ativar/Desativar Light Mode</span>
         <i class="ph-bold ph-sun"></i>
         <i class="ph-bold ph-moon"></i>
-      </button>
+      </button> -->
 
-      <section id="timer">
+      <section id="timer" class="flex">
         <span id="minutes">00</span>
         <span>:</span>
-        <span id="controls">00</span>
+        <span id="seconds">00</span>
       </section>
 
-      <section id="controls">
+      <section id="controls" class="flex">
         <button class="ph ph-play-circle"></button>
         <button class="ph ph-pause-circle"></button>
-        <button class="ph ph-timer"></button>
-        <button class="ph ph-stop-circle"></button>
-        <button class="ph ph-speaker-none"></button>
+        <button class="ph ph-timer secondary"></button>
+        <button class="ph ph-stop-circle secondary"></button>
+        <button class="ph ph-speaker-none secondary"></button>
         <button class="ph ph-speaker-high"></button>
       </section>
     </div>
