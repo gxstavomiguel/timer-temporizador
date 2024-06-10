@@ -21,6 +21,34 @@ html.light{
     --controls-bg-color:hsl(var(--hue), 0%, 14%);
 }
 
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+    display: none;
+}
+
+#toggle-mode {
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+    font-size: 3.2rem;
+    line-height: 0;
+
+    color: var(--text-color)
+}
+
+/* Classe utilitária sr-only (Acessibilidade) Esconde o texto de luz porém usando leitor de tela é possível escutar o ícone*/
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
 body {
     background-color: var(--bg-color);
     color:var(--text-color);
