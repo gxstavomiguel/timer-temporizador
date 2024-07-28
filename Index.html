@@ -21,32 +21,44 @@
       </button>
 
       <section id="timer" class="flex">
-        <span id="minutes">GUSTAVO</span>
+        <span id="minutes">00</span>
         <span>:</span>
         <span id="seconds">00</span>
       </section>
 
       <section id="controls" class="flex">
-        <button class="ph ph-play-circle">
+        <button 
+        data-action="toggleRunning"
+        class="ph ph-play-circle">
           <span class="sr-only">Iniciar contador</span>
         </button>
 
-        <button class="ph ph-pause-circle">
+        <button 
+        data-action="toggleRunning"
+        class="ph ph-pause-circle">
           <span class="sr-only">Pausar contador</span>
         </button>
-
-        <button class="ph ph-timer secondary"><span class="sr-only">Ajustar contador</span>
+       
+        <button 
+        data-action="set"
+        class="ph ph-timer secondary"><span class="sr-only">Ajustar contador</span>
         </button>
 
-        <button class="ph ph-stop-circle secondary"><span class="sr-only">Reiniciar contador</span>
+        <button 
+        data-action="reset"
+        class="ph ph-stop-circle secondary"><span class="sr-only">Reiniciar contador</span>
 
         </button>
 
-        <button class="ph ph-speaker-none secondary"><span class="sr-only">Iniciar música</span>
+        <button 
+        data-action="toggleMusic"
+        class="ph ph-speaker-none secondary"><span class="sr-only">Iniciar música</span>
 
         </button>
 
-        <button class="ph ph-speaker-high"><span class="sr-only">Desligar música</span>
+        <button 
+        data-action="toggleMusic"
+        class="ph ph-speaker-high"><span class="sr-only">Desligar música</span>
 
         </button>
       </section>
